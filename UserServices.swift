@@ -24,7 +24,7 @@ enum UserServices {
     var path : String{
         switch self {
         case .discover(let page):
-            return "discover/movie?api_key=5c6a579731ab07c7411078d62d9a06b2&sort_by=release_date.desc&page=\(page)"
+            return "discover/movie?api_key=5c6a579731ab07c7411078d62d9a06b2&sort_by=popularity.desc&page=\(page)"
         case .search(let text,let page):
             return "search/movie?api_key=5c6a579731ab07c7411078d62d9a06b2&query=\(text)&page=\(page)"
         case .geners():
